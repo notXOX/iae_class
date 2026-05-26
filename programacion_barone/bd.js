@@ -12,6 +12,6 @@ const usuarios = [
     {nombre: "Andrés", apellido: "Morales", cedula: 55789632, correo: "andresmorales@gmail.com"}
 ]
 
-module.exports = {
+export {
     usuarios
 }
