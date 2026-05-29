@@ -1,0 +1,50 @@
+span {
+    color: red;
+}
+
+body {
+    background-image: url("https://wallpapers.com/images/hd/1920-x-1080-nature-desktop-7h76hbdcrtpawe3i.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: lightskyblue;
+    font-weight: bold;
+    text-shadow: 2px 1px 1px white;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+h5 {
+    color:azure;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.texto {
+    font-weight: bold;
+}
+
+img {
+    width: 300px;
+}
+
+.mover {
+    display: block;
+}
