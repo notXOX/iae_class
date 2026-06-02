@@ -67,10 +67,12 @@ while true; do
         add_user_group
     ;;
     "0")
-        echo "Operacion finalizada"
+        zenity --info --title"Programa finalizado" --text"El programa finalizó correctamente"
+        exit
     ;;
     *)
-        echo "Opcion no valida"
+        zenity --error --title"Opcion no válida" --text"Ingrese una opcion válida"
+        exit
     ;;
     esac
 done
