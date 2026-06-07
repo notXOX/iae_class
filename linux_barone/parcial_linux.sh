@@ -1,4 +1,4 @@
-#!bin/bash/
+#!/bin/bash
 
 new_directory() {
     dir_name=$(zenity --entry --title="Crear directorio" \
