@@ -1,0 +1,20 @@
+<nav>
+    <button onclick="window.location.href='/'">
+        Inicio
+    </button>
+
+    <button onclick="window.location.href='/libros'">
+        Inventario
+    </button>
+
+    <button onclick="window.location.href='/libros/nuevo'">
+        Agregar libro
+    </button>
+
+    <button onclick="
+    let id = prompt('Ingrese el ID del libro');
+    if(id) window.location.href='/libros/' + id;
+    ">
+    Buscar
+</button>
+</nav>

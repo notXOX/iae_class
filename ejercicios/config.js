@@ -9,6 +9,7 @@ const ruta = `${__dirname}/views` // definimos la ruta para los archivos que uti
 const servidor = express() // le paso la configuracion del servidor a la variable servidor
 
 servidor.use(express.json()) // para que el servidor trabaje con json
+servidor.use(express.urlencoded({ extended: true })); 
 servidor.use(express.static(ruta)) // definimos archivos estaticos
 servidor.set("view engine", "hbs") // para utilizar hbs como motor de plantillas
 hbs.registerPartials(`${__dirname}/views/partials`) // registramos los parciales que se usaran

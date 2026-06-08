@@ -6,6 +6,10 @@
     <title> Listado | Biblioteca</title>
 </head>
 <body>
+    {{> menu }}
     <h1> Listado del inventario de la biblioteca</h1>
+    {{#each libros}}
+        <h2> {{id}} {{titulo}} {{autor}} {{genero}} </h2>
+    {{/each}}
 </body>
 </html>
