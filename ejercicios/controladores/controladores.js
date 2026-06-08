@@ -4,8 +4,11 @@ const mostrarInicio = (req, res) => {
     res.render("index")
 }
 
-const mostrarLibro = (req, res) => {
-    res.render("detallelibros")
+const mostrarLibro = async (req, res) => {
+    let buscar_libro = await libros.find(l => l.id == req.params.id)
+    res.render("detallelibros", {
+        libro: buscar_libro
+    })
 }
 
 const mostrarLibros = (req, res) => {
