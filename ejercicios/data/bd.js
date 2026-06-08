@@ -9,7 +9,7 @@ const getLibroById = (id) => {
 
 const addLibro = (libro) => {
     const nuevoLibro = {
-        id: libros.length > 0 ? libros[libros.lenght - 1].id + 1 : 1,
+        id: libros.length > 0 ? libros[libros.length - 1].id + 1 : 1,
         ...libro
     }
     libros.push(nuevoLibro)
