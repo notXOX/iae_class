@@ -1,5 +1,5 @@
 const libros = [
-    {id: 1, titulo:"Don Quijote de la Mancha", autor:"Miguel Cervantes", genero:"Fantasia"}
+    {id: 1, titulo:"Don Quijote de la Mancha", autor:"Miguel Cervantes", genero:"Fantasia", año: 1605}
 ]
 const getLibro = () => libros // obtengo todos los libros
 
