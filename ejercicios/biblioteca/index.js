@@ -2,12 +2,14 @@ import express from "express"
 import hbs from "hbs"
 import { fileURLToPath } from "url"
 import { dirname } from "path"
+import { router } from "../biblioteca/rutas/rutaslibros.js"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 const ruta = `${__dirname}/views`
 const servidor = express()
 
+servidor.use(router)
 servidor.use(express.json())
 servidor.use(express.urlencoded({
     extended: true

@@ -1,9 +1,9 @@
-import prisma from "../prismaClient.js"
+import { prisma } from "../prismaClient.js"
 
 const listarLibros = async (req, res) => {
     try {
         const libros = await prisma.libro.findMany()
-        res.render("libros", { libros })
+        res.render("inventario", { libros })
 
     } catch(error){
         console.log(error)
@@ -34,7 +34,7 @@ const detalleLibro = async (req, res) => {
     }
 }
 
-const crearLibro = (req, res) => {
+const crearLibro = async (req, res) => {
     try {
         const {
             titulo,
@@ -96,7 +96,7 @@ const prestarLibro = async (req, res) => {
         }
 
         const prestamo = await prisma.prestamo.crate({
-            data: { libroId = id }
+            data: { libroId : id }
         });
 
         await prisma.libro.update({
@@ -178,5 +178,8 @@ export {
     listarLibros,
     mostrarFormulario,
     detalleLibro,
-    crearLibro
+    crearLibro,
+    prestarLibro,
+    devolverLibro,
+    buscarCategoria
 }
